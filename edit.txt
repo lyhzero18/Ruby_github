@@ -1,0 +1,14 @@
+<h1>以下の内容を編集してください。</h1>
+<div class = "posts-edit-item">
+    <% @post.errors.full_messages.each do |message|%>
+        <%= message%>
+    <%end%>
+    <%=form_tag("/posts/#{@post.id}/update") do %>
+        <textarea name = "content">
+        <%=@post.content%>
+        </textarea>
+        <input type = "submit" vlaue= "編集">
+    <%end%>
+
+</div>
+    
