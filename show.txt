@@ -1,0 +1,18 @@
+  <div class="container">
+    <h1>ユーザー情報</h1>
+    <div class = "header">
+<%= link_to("Home","/")%>
+ <%= link_to("about","/about")%>
+<%= link_to("SNS","/posts/index")%> 
+<%= link_to("新規投稿","/posts/create_data")%> 
+<%= link_to("ユーザー一覧","/users/index")  %> 
+</div>
+<p> 
+<%= @users.name %>
+</p>
+<p> 
+<%= @users.email %>
+</p>
+<div class = "user-menus">
+  <%#  <%= link_to("編集","/users/#{@user.id}/edit ") %>
+</div>
